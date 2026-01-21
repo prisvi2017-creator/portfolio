@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mon Portfolio</title>
+        <!-- Favicon-->
+      
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Portfolio</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Compétences</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="py-5">
+                <div class="container px-5 pb-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-xxl-5">
+                            <!-- Header text content-->
+                            <div class="text-center text-xxl-start">
+                    
+                          <h1 class=" fw-bolder mb-5 title-anim">
+  <span>Je crée, je code et je donne vie à vos solutions digitales.</span>
+</h1>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                    <a class="btn btn-primaryy btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Compétences</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7">
+                            <!-- Header profile picture-->
+                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                                <div class="profile -primary-to-secondary">
+                    
+                                    <img class="profile-img" src="assets/moi.webp" alt="..." />
+                                
+                                  
+                                    </div>
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+     <!-- About Section-->
+<!-- About Section-->
+<section class="bg-night py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+
+            <!-- Texte (à gauche) -->
+            <div class="col-lg-7">
+                <div class="my-5">
+                    <h2 class="display-5 fw-bolder">
+                        <span class="text-gradient d-inline">À propos de moi</span>
+                    </h2>
+
+                   <p class="lead fw-light mb-4"  style="margin-top: 55px;">
+    Salut, je suis 
+    <span id="typingName" class="text-nom fw-bold"></span>
+</p>
+<script>
+    const text = "Kouame Ygnila Ange Priscille Tiemele";
+    const speed = 120; // vitesse d’écriture
+    const delayBetweenLoops = 1500; // pause avant de recommencer
+
+    let i = 0;
+    const span = document.getElementById("typingName");
+
+    function typeWriter() {
+        if (i < text.length) {
+            span.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        } else {
+            setTimeout(() => {
+                span.textContent = "";
+                i = 0;
+                typeWriter();
+            }, delayBetweenLoops);
+        }
+    }
+
+    typeWriter();
+</script>
+
+                    <p class="text-muted">
+                        Développeuse web et mobile, passionnée par les expériences numériques modernes.
+                        Je combine créativité et compétences techniques
+                        pour des interfaces performantes. Motivée à contribuer à des projets innovants.
+                    </p>
+
+                    <div class="d-flex fs-2 gap-4">
+                        <a class="text-gradient" href="https://www.facebook.com/ange.kouame.421559/?locale=fr_FR" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/priscille-kouame-b6b018211/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image (à droite) -->
+            <div class="col-lg-5 text-center">
+                <img src="assets/moi 2.webp" alt="Photo de profil" class="img-fluid rounded-3">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Mon portfolio 2025</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+         <script>
+// Animation flottement + respiration + rotation
+gsap.to(".profile-img", {
+  y: -20,
+  rotation: 3,
+  scale: 1.03,
+  duration: 3.8,
+  ease: "sine.inOut",
+  repeat: -1,
+  yoyo: true
+});
+
+// Animation indépendante du conteneur (micro-parallax)
+gsap.to(".profile", {
+  y: 12,
+  duration: 4.5,
+  ease: "power1.inOut",
+  repeat: -1,
+  yoyo: true
+});
+</script>
+
+
+<script>
+gsap.to(".title-anim span", {
+  duration: 3,
+  backgroundPositionX: "0%",
+  ease: "power2.inOut"
+});
+
+gsap.from(".title-anim span", {
+  opacity: 0,
+  y: 30,
+  duration: 1.2,
+  ease: "power3.out"
+});
+</script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

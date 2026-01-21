@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mon Portfolio</title>
+        <!-- Favicon-->
+  
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+           <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Portfolio</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Compétences</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+         <section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0">
+                <span class="text-gradient d-inline">Mes Projets</span>
+            </h1>
+        </div>
+
+        <div class="row gy-5">
+
+            <!-- PROJET 1 -->
+            <div class="col-md-4">
+                <div class="folder-card">
+                    <div class="folder-header"></div>
+
+                    <h4 class="folder-title">Projet Local (LMES website)</h4>
+
+                    <div class="folder-preview" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <img src="assets/lmes.webp" alt="">
+                    </div>
+
+                    <div class="folder-link">
+                        <a href="projects/educ/index.html" target="_blank">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL -->
+            <div class="modal fade" id="modal1" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/lmes.webp" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PROJET 2  -->
+<div class="col-md-4">
+    <div class="folder-card">
+        <div class="folder-header"></div>
+
+        <h4 class="folder-title">Projet local (Meetdoc)</h4>
+
+        <div class="folder-preview" data-bs-toggle="modal" data-bs-target="#modal2">
+            <img src="assets/meetdoc.webp" alt="">
+        </div>
+
+        <div class="folder-link">
+            <!-- Remplace ce lien par ton lien gratuit une fois hébergé -->
+            <a href="projects/meetdoc/index.html" target="_blank">
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL POUR PROJET 2 -->
+<div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <img src="assets/meetdoc.webp" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+         
+           <!-- PROJET 4 (Images + Vidéos) -->
+<div class="col-md-4">
+    <div class="folder-card">
+        <div class="folder-header"></div>
+
+        <h4 class="folder-title">Projet local (H2SI Hub app)</h4>
+
+        <div class="folder-preview"
+             data-bs-toggle="modal" data-bs-target="#modal4"
+             data-media="assets/test.jpg" data-type="image">
+            <img src="assets/capture1.webp" style="width: auto; height: 250px; margin:0 auto; margin-left: 7rem;" alt="">
+        </div>
+
+        <div class="folder-link">
+            <a href="#" onclick="alert('Contenu média uniquement'); return false;">
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODAL MEDIA -->
+<div class="modal fade" id="modal4" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content p-3">
+
+            <!-- Zone où l’image ou la vidéo sera chargée -->
+            <div class="media-container text-center"></div>
+
+            <div class="row mt-3 px-3">
+
+                <div class="col-6">
+                    <button class="btn btn-warning w-100"
+                            data-media="" data-type="image">
+                        Afficher Image
+                    </button>
+                </div>
+
+                <div class="col-6">
+                    <button class="btn btn-warning w-100"
+                            data-media="assets/media/app.mp4" data-type="video">
+                        Lire Vidéo
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- PROJET 5 -->
+            <div class="col-md-4">
+                <div class="folder-card">
+                    <div class="folder-header"></div>
+
+                    <h4 class="folder-title">Projet H2SI hub (app web)</h4>
+
+                    <div class="folder-preview" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <img src="assets/h2si hub.webp" alt="">
+                    </div>
+
+                    <div class="folder-link">
+                        <a href="projects/h2si_hub/index.php" target="_blank">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal5" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/h2si hub.webp" alt="" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+            <!-- Call to action section-->
+            <section class="py-5" style="background: linear-gradient(90deg, #cb8987, #f7d6d5, #cb8987);
+ color:black; ">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Travaillons ensemble</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" style="color: black;" href="contact.html">Contactez-moi</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Mon portfolio 2025</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script>
+/* -------- ANIMATION GSAP SUR LES DOSSIERS -------- */
+gsap.to(".folder-card", {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power3.out"
+});
+
+/* ----------- LECTURE MULTI-MEDIA POUR PROJET 4 ----------- */
+document.querySelectorAll('[data-media]').forEach(item => {
+    item.addEventListener("click", function (event) {
+
+        event.stopPropagation(); // empêche double clic
+
+        const modal = document.querySelector("#modal4 .media-container");
+        modal.innerHTML = "";
+
+        const type = this.dataset.type;
+        const src = this.dataset.media;
+
+        if (type === "image") {
+            modal.innerHTML = `<img src="${src}" class="img-fluid rounded">`;
+        }
+
+        if (type === "video") {
+            modal.innerHTML = `
+                <video controls autoplay style="width:100%; max-height:75vh; object-fit:contain;">
+                    <source src="${src}" type="video/mp4">
+                </video>
+            `;
+        }
+    });
+});
+
+</script>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
