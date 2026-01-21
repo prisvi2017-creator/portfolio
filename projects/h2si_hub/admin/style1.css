@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none;
+    border: none;
+   text-decoration: none;
+}
+
+h1{
+   display: flex;
+   position: absolute;
+   top: 50px;
+   text-decoration: underline;
+}
+
+.form{
+    min-height: 100vh;
+    background: url('images/k5RaNEwzz1gZmUCn19FoX4nYrrBITF8xd6UAt1gN.jpg') no-repeat;
+    background-size: cover;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
+ .form form{
+    padding:20px;
+    background-color: #80fc0498;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.149);
+    text-align: center;
+    width: 500px;
+    border-radius: 5px;
+ }
+
+ .btn {
+    width: 100%;
+    height: 45px;
+    background: #ef1d12;
+    margin-top: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+ }
+ 
+ .btn:hover{
+    background-color: rgb(29, 144, 197);
+ }
+ 
+ .form form h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: black;
+   border: 3px solid #000;
+ }
+ 
+ .form form .box{
+    width: 100%;
+    padding:12px 14px;
+    background-color: #00000000;
+    font-size: 18px;
+    color: #000;
+    font-weight: 800;
+    margin:10px 0;
+    border-bottom: 2px solid #f01307;
+ }
+
+ .form form .box input{
+    height: 45px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #000;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+   }
+
+   
+ 
+ .form form p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;
+ }
+ 
+ .form form p a{
+    color:red;
+ }
+ 
+ .form form p a:hover{
+    text-decoration: underline;
+ }
+
+ .error {
+   text-align: center;
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+ }
+
+ .lienprof{
+   display: flex;
+   position: absolute;
+   bottom: 150px;
+ }
+
+ .lienprof p{
+   background-color: #a9444286;
+   color: #fff;
+   font-weight: 700;
+  
+ }
+
+ .lienprof a{
+   color: rgb(13, 0, 255);
+   font-weight: 500;
+ }
+
+ .lienprof a:hover{
+  text-decoration: underline;
+ }

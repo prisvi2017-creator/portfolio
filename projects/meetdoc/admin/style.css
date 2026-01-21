@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
+
+  body{
+    background: url("images/forme3.png") no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .formulaire {
+    background-color: #fff;
+    position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -40%);
+    padding: 20px;
+    width: 40%;
+    height: 35vh;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-out;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .formulaire  input[type = "password"], .formulaire  input[type = "email"] {
+    border: 0;
+    width: 100%;
+    padding: 8px;
+  margin-bottom: 16px;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid #7ebb40;
+    outline: none;
+    outline-color: white;
+    transition: 0.25s;
+  }
+
+  .formulaire input[type = "password"]:focus, .formulaire input[type = "email"]:focus{
+    border-color: #fb4b0b;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+
+  .inscription{
+    background-color: #fff;
+    position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -40%);
+    padding: 20px;
+    width: 40%;
+    height: 75vh;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-out;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .inscription  input[type = "file"] {
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .inscription .user {
+    border: 0;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #7ebb40;
+    outline: none;
+    outline-color: white;
+    cursor: pointer;
+  }
+
+  
+  .inscription  input[type = "text"], .inscription  input[type = "password"], .inscription  input[type = "email"] {
+    border: 0;
+    width: 100%;
+    padding: 8px;
+  margin-bottom: 16px;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid #7ebb40;
+    outline: none;
+    outline-color: white;
+    transition: 0.25s;
+  }
+
+  .inscription  input[type = "text"]:focus, .inscription input[type = "password"]:focus, .inscription input[type = "email"]:focus{
+    border-color: #fb4b0b;
+  }
+
+  .inscription button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .inscription button:hover {
+    background-color: #45a049;
+  }
+
+  .panel{
+    width: 20%;
+    height: 110%;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.288);
+    transition: all 0.4s ease-out;
+  }
+
+  .profile img{
+    align-items: center;
+    margin-left: 4rem;
+    border-radius: 50%;
+  }
+
+  
+  .profile .name{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .profile .role{
+    width: 100%;
+    color: #f50c0c;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+  }
+
+  .panel li{
+    position: relative;
+    margin: 2.5rem;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .panel li a{
+   justify-content: left;
+    color: #fff;
+    
+  }
+
+  .panel li div:hover{
+   border: 2px solid #fff;
+   border-radius: 50%;
+   width: 20%;
+   height: 5%;
+   }
+
+   .panel ul li a:focus {
+       content: "";
+       position: absolute;
+       width: 116%;
+       height: 33px;
+       padding: 5px;
+       background-color: #7ebb40;
+   }
+   
+  .top{
+    position: absolute;
+    display: flex;
+    top: 2%;
+    left: 22%;
+    justify-content: space-between;
+    width: 77%;
+  }
+
+  .toggle{
+    cursor: pointer;
+  }
+
+  .bi{
+    font-size: 22px;
+    color: #0fa2f1;
+  }
+
+.search{
+  position: relative;
+  
+}
+   
+.top  input[type = "text"] {
+  border: 0;
+  width: 300px;
+  padding: 8px;
+  background-color: transparent;
+  text-align: center;
+  border-bottom: 2px solid #7ebb40;
+  outline: none;
+  outline-color: white;
+  transition: 0.25s;
+}
+
+.top  input[type = "text"]:focus {
+
+  border-bottom: 2px solid #00fbff;
+ 
+}
+
+.top a{
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.top a:hover {
+  background-color: #45a049;
+}
+
+.tableau{
+  position: absolute;
+  display: flex;
+  margin-top: 200px;
+  background-color: #0fa2f1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.288);
+  border-radius: 5px;
+  padding: 2.5rem;
+  width: 100%;
+}
+
+
+
+.tableau  .box{
+  margin-top: 100px;
+  margin-left: 30px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color:#fff;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.tableau  .box p{
+background-color: #fff;
+color: #df551e;
+padding: 5px;
+ margin: 1.5rem;
+}
+
+.tableau  .box{
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.corps{
+  position: absolute;
+  display: block;
+  margin-top: 200px;
+  background-color: #0fa2f1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.288);
+  border-radius: 5px;
+  padding: 2.5rem;
+  width: 100%;
+}
+
+.corps .boxe{
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-left: 2px;
+}
+
+.corps .rouge{
+  background-color: #df551e;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.corps .rouge:hover {
+  background-color: rgb(240, 76, 47);
+}

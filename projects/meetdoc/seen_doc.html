@@ -1,0 +1,119 @@
+<?php
+include('session_client.php')
+?>
+
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+        <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+        <title>Espace client</title>
+        <link rel="icon" href="images/meetdoc2.png"  >
+        <link rel="stylesheet" href="style.css">
+      
+    </head>
+    <body style="background-image: url(images/forme3.png );" >
+        <!--navigation-->
+        <div class="client">
+        <div class="panel">
+
+
+            <div class="profile">
+
+        
+        <?php
+         include("admin/connexion.php");
+        $select = $con->query("SELECT * FROM `t_client` WHERE email='$email'  ");
+      while ($fetch= $select->fetch(PDO::FETCH_ASSOC)) {
+         echo '<img class="image" src="client/'.$fetch['image'].'">';            
+                
+     
+                      }
+                 
+                ?>
+  </div>
+
+        <div class="infos">
+        <h3 class="name"><span><?php echo "$nom  $prenom" ; ?></span></h3>
+            <i class="bi bi-arrow-right-circle-fill"  id="perso"></i>
+        </div>
+
+            <div class="deconnexion">
+                <a href="deconnexion.php">Deconnexion</a>
+                <i class="bi bi-arrow-right-square-fill" id="deco"></i>
+
+            </div>
+          
+                    </div>
+
+
+
+<div class="top">
+
+
+<div class="search">
+     <label>
+        <input type="text" placeholder="Que recherchez-vous?">
+        <i class="bi bi-search"></i>
+     </label>
+   </div>
+
+     
+   <div class="espace1">
+
+   <div class="form_rendezvous">
+   <h3>Formulaire de prise de rendez-vous </h3>
+        <form>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="doctor-type">Type de médecin:</label>
+                <select id="doctor-type" name="doctor-type" required>
+                    <option value="">Sélectionnez le type de médecin</option>
+                    <option value="generaliste">Médecin Généraliste</option>
+                    <option value="specialiste">Spécialiste</option>
+                    <option value="dentiste">Dentiste</option>
+                    <!-- Ajoutez d'autres options selon vos besoins -->
+                </select>
+                
+                <label for="date">Date souhaitée:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Heure souhaitée:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit">Prendre Rendez-vous</button>
+            </form>
+    
+</div>
+   
+
+
+   </div>
+
+</div>
+
+
+      
+<!--Fin navigation-->
+
+  <!--footer-->
+  <footer class="foot"  >
+  &copy; copyright @ 2024 <span>meetdoc</span> | tout droit reserves!
+
+         </footer>
+         </div>
+          <!--Fin footer-->
+<script src="ad.js"></script>
+
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </body>
+        </html>
