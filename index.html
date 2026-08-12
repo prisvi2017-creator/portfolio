@@ -1,198 +1,460 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Mon Portfolio</title>
-        <!-- Favicon-->
-      
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Portfolio</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Compétences</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                    
-                          <h1 class=" fw-bolder mb-5 title-anim">
-  <span>Je crée, je code et je donne vie à vos solutions digitales.</span>
-</h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primaryy btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Compétences</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projets</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <div class="profile -primary-to-secondary">
-                    
-                                    <img class="profile-img" src="assets/moi.webp" alt="..." />
-                                
-                                  
-                                    </div>
-                                 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-     <!-- About Section-->
-<!-- About Section-->
-<section class="bg-night py-5">
-    <div class="container px-5">
-        <div class="row gx-5 align-items-center">
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio d'Ange Kouame, développeur web fullstack — HTML, CSS, JavaScript, PHP, React."
+    />
+    <title>AngeDev — Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"
+    />
 
-            <!-- Texte (à gauche) -->
-            <div class="col-lg-7">
-                <div class="my-5">
-                    <h2 class="display-5 fw-bolder">
-                        <span class="text-gradient d-inline">À propos de moi</span>
-                    </h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-                   <p class="lead fw-light mb-4"  style="margin-top: 55px;">
-    Salut, je suis 
-    <span id="typingName" class="text-nom fw-bold"></span>
-</p>
-<script>
-    const text = "Kouame Ygnila Ange Priscille Tiemele";
-    const speed = 120; // vitesse d’écriture
-    const delayBetweenLoops = 1500; // pause avant de recommencer
-
-    let i = 0;
-    const span = document.getElementById("typingName");
-
-    function typeWriter() {
-        if (i < text.length) {
-            span.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        } else {
-            setTimeout(() => {
-                span.textContent = "";
-                i = 0;
-                typeWriter();
-            }, delayBetweenLoops);
-        }
-    }
-
-    typeWriter();
-</script>
-
-                    <p class="text-muted">
-                        Développeuse web et mobile, passionnée par les expériences numériques modernes.
-                        Je combine créativité et compétences techniques
-                        pour des interfaces performantes. Motivée à contribuer à des projets innovants.
-                    </p>
-
-                    <div class="d-flex fs-2 gap-4">
-                        <a class="text-gradient" href="https://www.facebook.com/ange.kouame.421559/?locale=fr_FR" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a class="text-gradient" href="https://www.linkedin.com/in/priscille-kouame-b6b018211/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image (à droite) -->
-            <div class="col-lg-5 text-center">
-                <img src="assets/moi 2.webp" alt="Photo de profil" class="img-fluid rounded-3">
-            </div>
-
-        </div>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== Barre navigateur décorative ===== -->
+    <div class="browser-bar">
+      <div class="traffic-lights">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="url-bar">
+        <span class="lock">🔒</span>
+        <span class="url">portfolio.dev</span>
+      </div>
     </div>
-</section>
 
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" id="navbar">
+      <a href="#accueil" class="logo">&lt;/&gt; AngeDev</a>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#accueil" class="nav-link active"
+            ><span class="nav-icon"></span>Accueil</a
+          >
+        </li>
+        <li>
+          <a href="#apropos" class="nav-link"
+            ><span class="nav-icon"></span>À propos</a
+          >
+        </li>
+        <li>
+          <a href="#projets" class="nav-link"
+            ><span class="nav-icon"></span>Projets</a
+          >
+        </li>
+        <li>
+          <a href="#competences" class="nav-link"
+            ><span class="nav-icon"></span>Compétences</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="nav-link"
+            ><span class="nav-icon"></span>Contact</a
+          >
+        </li>
+      </ul>
+      <button
+        id="themeToggle"
+        class="theme-toggle"
+        aria-label="Basculer le thème sombre/clair"
+      >
+        <span class="toggle-track"><span class="toggle-thumb">🌙</span></span>
+      </button>
+      <button id="navBurger" class="nav-burger" aria-label="Ouvrir le menu">
+        ☰
+      </button>
+    </nav>
 
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Mon portfolio 2025</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
-                </div>
+    <main>
+      <!-- ===== HERO ===== -->
+      <section id="accueil" class="hero">
+        <div class="window terminal-window hero-terminal reveal">
+          <div class="window-header terminal-header">
+            <div class="traffic-lights">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-         <script>
-// Animation flottement + respiration + rotation
-gsap.to(".profile-img", {
-  y: -20,
-  rotation: 3,
-  scale: 1.03,
-  duration: 3.8,
-  ease: "sine.inOut",
-  repeat: -1,
-  yoyo: true
-});
+            <span class="window-title">Terminal — portfolio@dev:~</span>
+          </div>
+          <div class="window-body terminal-body">
+            <p>
+              <span class="prompt">&gt;</span> <strong>Bienvenue</strong> 👋
+            </p>
+            <p class="terminal-text">
+              Je suis <strong>Ange</strong>, développeur web fullstack passionné
+              par la création d'applications modernes, performantes et utiles.
+            </p>
+            <p class="prompt-line">
+              portfolio@dev:~$ <span id="typedCursor" class="cursor">_</span>
+            </p>
+          </div>
+        </div>
 
-// Animation indépendante du conteneur (micro-parallax)
-gsap.to(".profile", {
-  y: 12,
-  duration: 4.5,
-  ease: "power1.inOut",
-  repeat: -1,
-  yoyo: true
-});
-</script>
+        <div class="hero-content reveal">
+          <h1 class="hero-title">
+            Construisons<br /><span class="highlight">le web de demain</span>
+          </h1>
+          <p class="hero-subtitle">Développeur Web Fullstack</p>
+          <p class="hero-stack">HTML • CSS • JavaScript • PHP • React</p>
+          <div class="hero-buttons">
+            <a href="#projets" class="btn btn-pink">📁 Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline">✉️ Me contacter</a>
+          </div>
+        </div>
 
+        <div class="hero-character reveal">
+          <!-- Remplace cette image par ton illustration (voir assets/images/README.md) -->
+          <img
+            src="assets/images/hero-character.png"
+            alt="Illustration d'Ange, développeur web"
+            onerror="this.style.display = 'none'"
+          />
+          <div class="floating-badge badge-1">&lt;/&gt;</div>
+          <div class="floating-badge badge-2">⚛️</div>
+          <div class="floating-badge badge-3">JS</div>
+          <div class="floating-badge badge-4">php</div>
+        </div>
 
-<script>
-gsap.to(".title-anim span", {
-  duration: 3,
-  backgroundPositionX: "0%",
-  ease: "power2.inOut"
-});
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <span class="sparkle sparkle-1">✦</span>
+        <span class="sparkle sparkle-2">✧</span>
+      </section>
 
-gsap.from(".title-anim span", {
-  opacity: 0,
-  y: 30,
-  duration: 1.2,
-  ease: "power3.out"
-});
-</script>
+      <!-- ===== A PROPOS ===== -->
+      <section id="apropos" class="section-wrap reveal">
+        <div class="window about-window">
+          <div class="window-header">
+            <span class="window-icon">🧩</span>
+            <span class="window-title">À propos de moi</span>
+            <div class="window-controls">
+              <span>—</span><span>▢</span><span>✕</span>
+            </div>
+          </div>
+          <div class="window-body about-body">
+            <div class="about-photo">
+              <!-- Remplace cette image par ta photo (voir assets/images/README.md) -->
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Photo d'Ange"
+                onerror="this.style.display = 'none'"
+              />
+              <span class="status-dot"></span>
+              <span class="status-text">En ligne</span>
+            </div>
+            <div class="about-text">
+              <p class="about-hello">Salut ! 👋</p>
+              <p>
+                Je suis <strong>Ange</strong>, développeur web passionné par les
+                technologies modernes et la création d'expériences utilisateur
+                fluides.
+              </p>
+              <p>
+                Je conçois des applications web performantes, intuitives et
+                scalables. J'aime apprendre, résoudre des problèmes et donner
+                vie aux idées à travers le code.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Fullstack Dev</span>
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Web Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- ===== GRID : COMPETENCES/CONTACT (gauche) + PROJETS/QUOTE (droite) ===== -->
+      <div class="content-grid">
+        <div class="col-left">
+          <!-- ===== COMPETENCES ===== -->
+          <section id="competences" class="reveal">
+            <div class="window skills-window">
+              <div class="window-header">
+                <span class="window-icon">📁</span>
+                <span class="window-title">Mes compétences</span>
+                <div class="window-controls">
+                  <span>—</span><span>▢</span><span>✕</span>
+                </div>
+              </div>
+              <div class="window-body">
+                <div class="skills-grid">
+                  <div class="skill-icon">
+                    <span class="icon-badge html">HTML5</span><span>HTML</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge css">CSS3</span><span>CSS</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge js">JS</span><span>JavaScript</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge php">php</span><span>PHP</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge react">⚛️</span><span>React</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge tw">≋</span><span>Tailwind</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge git">⌥</span><span>Git</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge sql">🗄️</span><span>MySQL</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge nextjs">▲</span><span>Next.js</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span class="icon-badge node">⬡</span><span>Node.js</span>
+                  </div>
+                </div>
+                <div class="skill-bars">
+                  <div class="skill-bar-row">
+                    <span class="skill-label">✦ Développement Frontend</span>
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-green"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">90%</span>
+                  </div>
+                  <div class="skill-bar-row">
+                    <span class="skill-label">✦ Développement Backend</span>
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-pink"
+                        style="width: 85%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">85%</span>
+                  </div>
+                  <div class="skill-bar-row">
+                    <span class="skill-label">✦ Base de données</span>
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-blue"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">80%</span>
+                  </div>
+                  <div class="skill-bar-row">
+                    <span class="skill-label"
+                      >◉ Outils &amp; Versioning (Git)</span
+                    >
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-yellow"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">90%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <!-- ===== CONTACT ===== -->
+          <section id="contact" class="reveal">
+            <div class="window contact-window">
+              <div class="window-header">
+                <span class="window-icon">✉️</span>
+                <span class="window-title">Contact</span>
+                <div class="window-controls">
+                  <span>—</span><span>▢</span><span>✕</span>
+                </div>
+              </div>
+              <div class="window-body">
+                <h3 class="contact-heading">Discutons de votre projet !</h3>
+                <p class="contact-sub">
+                  Je suis disponible pour des collaborations, des stages ou des
+                  missions freelance.
+                </p>
+                <ul class="contact-list">
+                  <li>
+                    📧
+                    <a href="mailto:prisvi2017@gmail.com"
+                      >prisvi2017@gmail.com</a
+                    >
+                  </li>
+                  <li>📍 Abidjan, Côte d'Ivoire</li>
+                  <li>💬 Disponible pour de nouveaux défis</li>
+                </ul>
+                <a href="mailto:prisvi2017@gmail.com" class="btn btn-pink"
+                  >Envoyer un message →</a
+                >
+                <div class="socials">
+                  <a
+                    href="https://www.facebook.com/ange.kouame.421559/?locale=fr_FR"
+                    target="_blank"
+                    rel="noopener"
+                    >Facebook</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/priscille-kouame-b6b018211/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        <div class="col-right">
+          <!-- ===== PROJETS ===== -->
+          <section id="projets" class="reveal">
+            <div class="window projects-window">
+              <div class="window-header">
+                <span class="window-icon">📁</span>
+                <span class="window-title">Mes projets</span>
+                <div class="window-controls">
+                  <span>—</span><span>▢</span><span>✕</span>
+                </div>
+              </div>
+              <div class="window-body projects-body">
+                <div class="projects-list">
+                  <!-- Projet 3 : H2SI Hub app (vidéo) -->
+                  <article class="project-card">
+                    <div class="project-icon">📱</div>
+                    <div class="project-info">
+                      <h4>
+                        H2SI Hub App
+                        <span class="status-pill status-video">Démo vidéo</span>
+                      </h4>
+                      <div class="tag-list small">
+                        <span class="tag">Flutter</span
+                        ><span class="tag">PHP</span>
+                      </div>
+                      <p>
+                        Application mobile Flutter du groupe H2SI mettant en
+                        avant la formation des agents de santé en ligne et la
+                        vente d'équipement de laboratoire.
+                      </p>
+                      <a
+                        href="#"
+                        class="project-link"
+                        data-video="assets/media/app.mp4"
+                        >Voir la démo ▶</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Projet 4 : EatWise -->
+                  <article class="project-card">
+                    <div class="project-icon">🥗</div>
+                    <div class="project-info">
+                      <h4>
+                        EatWise
+                        <span class="status-pill status-dev">En cours</span>
+                      </h4>
+                      <div class="tag-list small">
+                        <span class="tag">React</span
+                        ><span class="tag">Tailwind</span
+                        ><span class="tag">JavaScript</span>
+                      </div>
+                      <p>
+                        Plateforme e-commerce dédiée à l'alimentation saine :
+                        repas équilibrés, jus et desserts naturels.
+                      </p>
+                      <a
+                        href="projects/eatwise/index.html"
+                        target="_blank"
+                        class="project-link"
+                        >Voir le projet →</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Projet 5 : H2SI site officiel -->
+                  <article class="project-card">
+                    <div class="project-icon">🏢</div>
+                    <div class="project-info">
+                      <h4>
+                        H2SI — Site officiel
+                        <span class="status-pill status-live">En ligne</span>
+                      </h4>
+                      <div class="tag-list small">
+                        <span class="tag">HTML</span><span class="tag">CSS</span
+                        ><span class="tag">JavaScript</span
+                        ><span class="tag">PHP</span>
+                      </div>
+                      <p>
+                        Site web officiel du groupe H2SI : activités, services
+                        (formation et vente d'équipements) et contact.
+                      </p>
+                      <a
+                        href="https://groupeh2si.com/"
+                        target="_blank"
+                        class="project-link"
+                        >Voir le site →</a
+                      >
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===== QUOTE TERMINAL ===== -->
+          <div class="window terminal-window quote-window reveal">
+            <div class="window-header terminal-header">
+              <span class="window-icon">📄</span>
+              <span class="window-title">Quote.txt</span>
+              <div class="window-controls">
+                <span>—</span><span>▢</span><span>✕</span>
+              </div>
+            </div>
+            <div class="window-body terminal-body">
+              <p>
+                <span class="prompt">&gt;</span> "Coder, c'est donner vie à ses
+                idées."
+              </p>
+              <p><span class="prompt">&gt;</span> — AngeDev</p>
+              <p class="prompt-line">
+                portfolio@dev:~$ <span class="cursor">_</span>
+                <span class="heart">💗</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal vidéo (H2SI Hub app) -->
+      <div class="modal-overlay" id="videoModal">
+        <div class="modal-box">
+          <button class="modal-close" id="modalClose">✕</button>
+          <div class="modal-media"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 AngeDev — Tous droits réservés</p>
+      <p>Fait avec ❤️ et beaucoup de ☕</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
