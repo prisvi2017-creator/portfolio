@@ -51,6 +51,7 @@ body {
   background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-wrap: break-word;
   transition: background 0.4s ease, color 0.4s ease;
 }
 
@@ -347,7 +348,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   min-width: 220px;
 }
-.hero-character img { max-height: 340px; }
+.hero-character img { max-height: 260px; max-width: 100%; width: auto; height: auto; }
 .floating-badge {
   position: absolute;
   background: var(--white);
@@ -615,9 +616,18 @@ img { max-width: 100%; display: block; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* ---------- Responsive ---------- */
+
+/* Grands écrans / TV : on garde tout centré et lisible, rien ne s'étire à l'infini */
+@media (min-width: 1600px) {
+  .navbar { max-width: 1600px; margin: 0 auto; }
+  .hero, .section-wrap, .content-grid { max-width: 1500px; }
+}
+
+/* Tablettes (portrait/paysage) */
 @media (max-width: 980px) {
   .hero { grid-template-columns: 1fr; }
   .hero-character { order: -1; }
+  .hero-character img { max-height: 200px; }
   .content-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: repeat(5, 1fr); }
 }
@@ -645,7 +655,7 @@ img { max-width: 100%; display: block; }
   .hero-content { align-self: center; }
   .hero-buttons { justify-content: center; }
   .hero-character { min-width: 0; }
-  .hero-character img { max-height: 220px; }
+  .hero-character img { max-height: 180px; }
   .floating-badge { font-size: 0.75rem; padding: 0.3rem 0.5rem; }
 
   .section-wrap, .content-grid { padding: 0 1.2rem; }
@@ -663,7 +673,7 @@ img { max-width: 100%; display: block; }
   .hero-subtitle { font-size: 1rem; }
   .hero-buttons { flex-direction: column; align-items: stretch; }
   .hero-buttons .btn { justify-content: center; }
-  .hero-character img { max-height: 180px; }
+  .hero-character img { max-height: 150px; }
   .floating-badge { display: none; }
 
   .about-photo { flex: 0 0 160px; }
