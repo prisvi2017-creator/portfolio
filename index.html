@@ -32,38 +32,45 @@
         <span class="dot green"></span>
       </div>
       <div class="url-bar">
-        <span class="lock">🔒</span>
+        <span class="lock"
+          ><img src="assets/images/lock.png" width="20" height="25" alt="🔒"
+        /></span>
         <span class="url">portfolioange.dev</span>
       </div>
     </div>
 
     <!-- ===== Navigation ===== -->
     <nav class="navbar" id="navbar">
-      <a href="#accueil" class="logo">&lt;/&gt; AngeDev</a>
+      <a href="#accueil" class="logo">&lt; AngeDev/&gt;</a>
       <ul class="nav-links" id="navLinks">
         <li>
           <a href="#accueil" class="nav-link active"
-            ><span class="nav-icon"></span><span data-i18n="nav.accueil">Accueil</span></a
+            ><span class="nav-icon"></span
+            ><span data-i18n="nav.accueil">Accueil</span></a
           >
         </li>
         <li>
           <a href="#apropos" class="nav-link"
-            ><span class="nav-icon"></span><span data-i18n="nav.apropos">À propos</span></a
+            ><span class="nav-icon"></span
+            ><span data-i18n="nav.apropos">À propos</span></a
           >
         </li>
         <li>
           <a href="#projets" class="nav-link"
-            ><span class="nav-icon"></span><span data-i18n="nav.projets">Projets</span></a
+            ><span class="nav-icon"></span
+            ><span data-i18n="nav.projets">Projets</span></a
           >
         </li>
         <li>
           <a href="#competences" class="nav-link"
-            ><span class="nav-icon"></span><span data-i18n="nav.competences">Compétences</span></a
+            ><span class="nav-icon"></span
+            ><span data-i18n="nav.competences">Compétences</span></a
           >
         </li>
         <li>
           <a href="#contact" class="nav-link"
-            ><span class="nav-icon"></span><span data-i18n="nav.contact">Contact</span></a
+            ><span class="nav-icon"></span
+            ><span data-i18n="nav.contact">Contact</span></a
           >
         </li>
       </ul>
@@ -93,7 +100,12 @@
       >
         <span class="toggle-track"><span class="toggle-thumb">🌙</span></span>
       </button>
-      <button id="navBurger" class="nav-burger" data-i18n-aria="aria.menu" aria-label="Ouvrir le menu">
+      <button
+        id="navBurger"
+        class="nav-burger"
+        data-i18n-aria="aria.menu"
+        aria-label="Ouvrir le menu"
+      >
         ☰
       </button>
     </nav>
@@ -108,11 +120,20 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <span class="window-title" data-i18n="hero.terminalTitle">Terminal — portfolio@dev:~</span>
+            <span class="window-title" data-i18n="hero.terminalTitle"
+              >Terminal — portfolio@dev:~</span
+            >
           </div>
           <div class="window-body terminal-body">
-            <p>
-              <span class="prompt">&gt;</span> <strong data-i18n="hero.welcome">Bienvenue</strong> 👋
+            <p class="welcome-line">
+              <span class="prompt">&gt;</span>
+              <strong data-i18n="hero.welcome">Bienvenue</strong>
+              <img
+                src="assets/images/hand.png"
+                width="18"
+                height="20"
+                alt="👋"
+              />
             </p>
             <p class="terminal-text" data-i18n="hero.bio">
               Je suis <strong>Ange</strong>, développeuse fullstack passionnée
@@ -126,26 +147,55 @@
 
         <div class="hero-content reveal">
           <h1 class="hero-title">
-            <span data-i18n="hero.title1">Je code des solutions,</span><br /><span class="highlight" data-i18n="hero.titleHighlight">pas juste des pages</span>
+            <span data-i18n="hero.title1">Je code des solutions,</span
+            ><br /><span class="highlight" data-i18n="hero.titleHighlight"
+              >pas juste des pages</span
+            >
           </h1>
-          <p class="hero-subtitle" data-i18n="hero.subtitle">Développeuse Fullstack</p>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Développeuse fullstack
+          </p>
           <p class="hero-stack">HTML • CSS • JavaScript • PHP • React</p>
           <div class="hero-buttons">
-            <a href="#projets" class="btn btn-pink" data-i18n="hero.btnProjects">📁 Voir mes projets</a>
-            <a href="#contact" class="btn btn-outline" data-i18n="hero.btnContact">✉️ Me contacter</a>
+            <a
+              href="#projets"
+              class="btn btn-pink"
+              data-i18n="hero.btnProjects"
+            >
+              <img
+                src="assets/images/folder.png"
+                width="25"
+                height="20"
+                alt="📁"
+              />
+              Voir mes projets</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-outline"
+              data-i18n="hero.btnContact"
+              >✉️ Me contacter</a
+            >
           </div>
         </div>
 
-        <div class="hero-character reveal">
-
-          <img
-            src="assets/images/hero-character.png"
-            alt="Illustration d'Ange, développeur web"
-            data-i18n-alt="hero.imgAlt"
-            onerror="this.style.display = 'none'"
-          />
-          <div class="floating-badge badge-1">&lt;/&gt;</div>
-         
+        <div class="window hero-character-window reveal">
+          <div class="window-header">
+            <div class="traffic-lights">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="window-title">Ange.png</span>
+          </div>
+          <div class="window-body hero-character">
+            <img
+              src="assets/images/me (2).png"
+              alt="Illustration d'Ange, développeur web"
+              data-i18n-alt="hero.imgAlt"
+              onerror="this.style.display = 'none'"
+            />
+          </div>
         </div>
 
         <div class="cloud cloud-1"></div>
@@ -158,15 +208,22 @@
       <section id="apropos" class="section-wrap reveal">
         <div class="window about-window">
           <div class="window-header">
-            <span class="window-icon">🧩</span>
-            <span class="window-title" data-i18n="about.windowTitle">À propos de moi</span>
+            <span class="window-icon"
+              ><img
+                src="assets/images/puzzle.png"
+                width="22"
+                height="25"
+                alt="🧩"
+            /></span>
+            <span class="window-title" data-i18n="about.windowTitle"
+              >À propos de moi</span
+            >
             <div class="window-controls">
               <span>—</span><span>▢</span><span>✕</span>
             </div>
           </div>
           <div class="window-body about-body">
             <div class="about-photo">
-              <!-- Remplace cette image par ta photo (voir assets/images/README.md) -->
               <img
                 src="assets/images/profile.jpeg"
                 alt="Photo d'Ange"
@@ -174,14 +231,24 @@
                 onerror="this.style.display = 'none'"
               />
               <span class="status-dot"></span>
-              <span class="status-text" data-i18n="about.statusOnline">En ligne</span>
+              <span class="status-text" data-i18n="about.statusOnline"
+                >En ligne</span
+              >
             </div>
             <div class="about-text">
-              <p class="about-hello" data-i18n="about.hello">Salut ! 👋</p>
+              <p class="about-hello" data-i18n="about.hello">
+                Salut !
+                <img
+                  src="assets/images/hand.png"
+                  width="33"
+                  height="35"
+                  alt="👋"
+                />
+              </p>
               <p data-i18n="about.p1">
-                Je suis <strong>Ange</strong>, développeuse fullstack passionnée par les
-                technologies modernes et la création d'expériences utilisateur
-                fluides.
+                Je suis <strong>Ange</strong>, développeuse fullstack passionnée
+                par les technologies modernes et la création d'expériences
+                utilisateur fluides.
               </p>
               <p data-i18n="about.p2">
                 Je conçois des applications performantes, intuitives et
@@ -208,8 +275,16 @@
           <section id="competences" class="reveal">
             <div class="window skills-window">
               <div class="window-header">
-                <span class="window-icon">📁</span>
-                <span class="window-title" data-i18n="competences.windowTitle">Mes compétences</span>
+                <span class="window-icon"
+                  ><img
+                    src="assets/images/folder.png"
+                    width="25"
+                    height="20"
+                    alt="📁"
+                /></span>
+                <span class="window-title" data-i18n="competences.windowTitle"
+                  >Mes compétences</span
+                >
                 <div class="window-controls">
                   <span>—</span><span>▢</span><span>✕</span>
                 </div>
@@ -217,19 +292,19 @@
               <div class="window-body">
                 <div class="skills-grid">
                   <div class="skill-icon">
-                   <span>HTML</span>
+                    <span>HTML</span>
                   </div>
                   <div class="skill-icon">
                     <span>CSS</span>
                   </div>
                   <div class="skill-icon">
-                   <span>JavaScript</span>
+                    <span>JavaScript</span>
                   </div>
                   <div class="skill-icon">
                     <span>PHP</span>
                   </div>
                   <div class="skill-icon">
-                  <span>React</span>
+                    <span>React</span>
                   </div>
                   <div class="skill-icon">
                     <span>Tailwind</span>
@@ -238,18 +313,20 @@
                     <span>Git</span>
                   </div>
                   <div class="skill-icon">
-                   <span>MySQL</span>
+                    <span>MySQL</span>
                   </div>
                   <div class="skill-icon">
-                   <span>Next.js</span>
+                    <span>Next.js</span>
                   </div>
                   <div class="skill-icon">
-                   <span>Node.js</span>
+                    <span>Node.js</span>
                   </div>
                 </div>
                 <div class="skill-bars">
                   <div class="skill-bar-row">
-                    <span class="skill-label" data-i18n="competences.frontend">✦ Développement Frontend</span>
+                    <span class="skill-label" data-i18n="competences.frontend"
+                      >✦ Développement Frontend</span
+                    >
                     <div class="skill-bar">
                       <div
                         class="skill-fill fill-green"
@@ -259,7 +336,9 @@
                     <span class="skill-pct">90%</span>
                   </div>
                   <div class="skill-bar-row">
-                    <span class="skill-label" data-i18n="competences.backend">✦ Développement Backend</span>
+                    <span class="skill-label" data-i18n="competences.backend"
+                      >✦ Développement Backend</span
+                    >
                     <div class="skill-bar">
                       <div
                         class="skill-fill fill-pink"
@@ -269,7 +348,9 @@
                     <span class="skill-pct">70%</span>
                   </div>
                   <div class="skill-bar-row">
-                    <span class="skill-label" data-i18n="competences.database">✦ Base de données</span>
+                    <span class="skill-label" data-i18n="competences.database"
+                      >✦ Base de données</span
+                    >
                     <div class="skill-bar">
                       <div
                         class="skill-fill fill-blue"
@@ -299,14 +380,24 @@
           <section id="contact" class="reveal">
             <div class="window contact-window">
               <div class="window-header">
-                <span class="window-icon">✉️</span>
-                <span class="window-title" data-i18n="contact.windowTitle">Contact</span>
+                <span class="window-icon"
+                  ><img
+                    src="assets/images/letter.png"
+                    width="33"
+                    height="22"
+                    alt="✉️"
+                /></span>
+                <span class="window-title" data-i18n="contact.windowTitle"
+                  >Contact</span
+                >
                 <div class="window-controls">
                   <span>—</span><span>▢</span><span>✕</span>
                 </div>
               </div>
               <div class="window-body">
-                <h3 class="contact-heading" data-i18n="contact.heading">Discutons de votre projet !</h3>
+                <h3 class="contact-heading" data-i18n="contact.heading">
+                  Discutons de votre projet !
+                </h3>
                 <p class="contact-sub" data-i18n="contact.sub">
                   Je suis disponible pour des collaborations, des stages ou des
                   missions freelance.
@@ -318,10 +409,17 @@
                       >prisvi2017@gmail.com</a
                     >
                   </li>
-                  <li data-i18n="contact.location">📍 Abidjan, Côte d'Ivoire</li>
-                  <li data-i18n="contact.availability">💬 Disponible pour de nouveaux défis</li>
+                  <li data-i18n="contact.location">
+                    📍 Abidjan, Côte d'Ivoire
+                  </li>
+                  <li data-i18n="contact.availability">
+                    💬 Disponible pour de nouveaux défis
+                  </li>
                 </ul>
-                <a href="mailto:prisvi2017@gmail.com" class="btn btn-pink" data-i18n="contact.sendBtn"
+                <a
+                  href="mailto:prisvi2017@gmail.com"
+                  class="btn btn-pink"
+                  data-i18n="contact.sendBtn"
                   >Envoyer un message →</a
                 >
                 <div class="socials">
@@ -348,8 +446,16 @@
           <section id="projets" class="reveal">
             <div class="window projects-window">
               <div class="window-header">
-                <span class="window-icon">📁</span>
-                <span class="window-title" data-i18n="projects.windowTitle">Mes projets</span>
+                <span class="window-icon"
+                  ><img
+                    src="assets/images/folder.png"
+                    width="25"
+                    height="20"
+                    alt="📁"
+                /></span>
+                <span class="window-title" data-i18n="projects.windowTitle"
+                  >Mes projets</span
+                >
                 <div class="window-controls">
                   <span>—</span><span>▢</span><span>✕</span>
                 </div>
@@ -362,7 +468,11 @@
                     <div class="project-info">
                       <h4>
                         Fofaire
-                        <span class="status-pill status-local" data-i18n="project.fofaire.status">Projet local</span>
+                        <span
+                          class="status-pill status-local"
+                          data-i18n="project.fofaire.status"
+                          >Projet local</span
+                        >
                       </h4>
                       <div class="tag-list small">
                         <span class="tag">React</span
@@ -374,8 +484,8 @@
                       <p data-i18n="project.fofaire.desc">
                         Application de gestion de tâches avec calendrier,
                         statistiques d'activité (graphiques, heatmap) et
-                        authentification sécurisée. Backend Node.js/Express
-                        avec base de données SQLite.
+                        authentification sécurisée. Backend Node.js/Express avec
+                        base de données SQLite.
                       </p>
                       <a
                         href="#"
@@ -393,7 +503,11 @@
                     <div class="project-info">
                       <h4>
                         H2SI Hub App
-                        <span class="status-pill status-video" data-i18n="project.h2sihub.status">Démo vidéo</span>
+                        <span
+                          class="status-pill status-video"
+                          data-i18n="project.h2sihub.status"
+                          >Démo vidéo</span
+                        >
                       </h4>
                       <div class="tag-list small">
                         <span class="tag">Flutter</span
@@ -420,7 +534,11 @@
                     <div class="project-info">
                       <h4>
                         EatWise
-                        <span class="status-pill status-dev" data-i18n="project.eatwise.status">En cours</span>
+                        <span
+                          class="status-pill status-dev"
+                          data-i18n="project.eatwise.status"
+                          >En cours</span
+                        >
                       </h4>
                       <div class="tag-list small">
                         <span class="tag">React</span
@@ -447,7 +565,11 @@
                     <div class="project-info">
                       <h4>
                         H2SI — Site officiel
-                        <span class="status-pill status-live" data-i18n="project.h2si.status">En ligne</span>
+                        <span
+                          class="status-pill status-live"
+                          data-i18n="project.h2si.status"
+                          >En ligne</span
+                        >
                       </h4>
                       <div class="tag-list small">
                         <span class="tag">HTML</span><span class="tag">CSS</span
@@ -483,8 +605,10 @@
             </div>
             <div class="window-body terminal-body">
               <p>
-                <span class="prompt">&gt;</span> <span data-i18n="quote.text">"Coder, c'est donner vie à ses
-                idées."</span>
+                <span class="prompt">&gt;</span>
+                <span data-i18n="quote.text"
+                  >"Coder, c'est donner vie à ses idées."</span
+                >
               </p>
               <p><span class="prompt">&gt;</span> — AngeDev</p>
               <p class="prompt-line">
