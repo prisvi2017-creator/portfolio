@@ -28,6 +28,11 @@
   --font-head: "Fredoka", sans-serif;
   --font-body: "Poppins", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+
+  /* Hauteur réservée à la navbar collante (utilisée par les ancres) */
+  --nav-offset: 96px;
+  /* Décalage vertical de la colonne de droite */
+  --col-offset: 4.5rem;
 }
 
 [data-theme="dark"] {
@@ -73,6 +78,15 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* ---------- Ancres : la navbar collante ne doit plus masquer le haut
+             de la section visée quand on clique dans le menu ---------- */
+#accueil,
+#projets,
+#competences,
+#contact {
+  scroll-margin-top: var(--nav-offset);
 }
 
 /* ---------- Barre navigateur décorative ---------- */
@@ -264,7 +278,7 @@ img {
   border-radius: 10px;
   font-family: var(--font-body);
   font-size: 0.88rem;
-  color: var(--text-main);
+  color: var(--text-dark);
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -351,6 +365,10 @@ img {
 .terminal-body .prompt {
   color: var(--terminal-green);
 }
+
+.terminal-tags {
+  margin: 0.9rem 0;
+}
 .welcome-line {
   display: flex;
   align-items: center;
@@ -412,20 +430,31 @@ img {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1.4fr auto;
-  gap: 2rem;
-  align-items: stretch;
+  /* La colonne image ne prend plus que ce dont elle a besoin :
+     le texte peut donc venir se coller contre elle. */
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 460px);
+  grid-template-areas:
+    "content character"
+    "terminal terminal";
+  column-gap: clamp(2rem, 7vw, 8rem);
+  row-gap: 2rem;
+  align-items: start;
+  justify-content: center;
   padding: 3rem 2rem 5rem;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .hero-terminal {
+  grid-area: terminal;
   align-self: start;
 }
 
 .hero-content {
-  align-self: start;
+  grid-area: content;
+  align-self: center; /* le texte se cale à la hauteur de l'image */
+  justify-self: end; /* et se colle au bord de la fenêtre image */
+  max-width: 600px;
 }
 
 .hero-title {
@@ -467,7 +496,7 @@ img {
   align-items: flex-end;
   justify-content: center;
   background-color: #e7e3ff;
-  padding: 1.4rem;
+  padding: 1rem; /* était 1.4rem : moins de vide autour de l'image */
 }
 
 .hero-character img {
@@ -478,7 +507,9 @@ img {
 }
 
 .hero-character-window {
-  min-width: 400px;
+  grid-area: character;
+  width: 100%;
+  min-width: 0; /* était min-width: 400px */
   align-self: start;
 }
 .floating-badge {
@@ -568,7 +599,8 @@ img {
   margin: 0 auto 3rem;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  /* Colonne gauche (Projets + Contact) plus large que la droite */
+  grid-template-columns: 1.25fr 1fr;
   gap: 2rem;
   align-items: start;
 }
@@ -577,6 +609,13 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+/* La colonne de droite (Compétences + Quote) démarre plus bas :
+   les deux fenêtres ne sont plus alignées, et chaque ancre a
+   sa propre position de scroll. */
+.col-right {
+  padding-top: var(--col-offset);
 }
 
 /* ---------- About ---------- */
@@ -983,23 +1022,55 @@ img {
 
 /* ---------- Responsive ---------- */
 
-/* Grands écrans / TV : on garde tout centré et lisible, rien ne s'étire à l'infini */
+/* Grands écrans / TV : on garde tout centré et lisible */
 @media (min-width: 1600px) {
   .navbar {
     max-width: 1600px;
     margin: 0 auto;
   }
-  .hero,
   .section-wrap,
   .content-grid {
     max-width: 1500px;
+  }
+  .hero {
+    max-width: 1320px;
   }
 }
 
 /* Tablettes (portrait/paysage) */
 @media (max-width: 980px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-left,
+  .col-right {
+    display: contents;
+  }
+
+  #projets {
+    order: 1;
+  }
+  #competences {
+    order: 2;
+  }
+  #contact {
+    order: 3;
+  }
+  .quote-window {
+    order: 4;
+  }
   .hero {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "character"
+      "content"
+      "terminal";
+    row-gap: 1.2rem;
+  }
+  .hero-content {
+    justify-self: center;
+    max-width: 100%;
   }
   .hero-character-window {
     order: -1;
@@ -1010,12 +1081,19 @@ img {
   .content-grid {
     grid-template-columns: 1fr;
   }
+  /* En une seule colonne, plus besoin du décalage */
+  .col-right {
+    padding-top: 0;
+  }
   .skills-grid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 720px) {
+  :root {
+    --nav-offset: 80px;
+  }
   .navbar {
     padding: 0.8rem 1.2rem;
   }
@@ -1059,7 +1137,7 @@ img {
 
   .hero {
     padding: 2rem 1.2rem 3rem;
-    gap: 1.5rem;
+    gap: 1.2rem;
     text-align: center;
   }
   .hero-content {

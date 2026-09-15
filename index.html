@@ -49,12 +49,7 @@
             ><span data-i18n="nav.accueil">Accueil</span></a
           >
         </li>
-        <li>
-          <a href="#apropos" class="nav-link"
-            ><span class="nav-icon"></span
-            ><span data-i18n="nav.apropos">À propos</span></a
-          >
-        </li>
+
         <li>
           <a href="#projets" class="nav-link"
             ><span class="nav-icon"></span
@@ -121,7 +116,7 @@
               <span class="dot green"></span>
             </div>
             <span class="window-title" data-i18n="hero.terminalTitle"
-              >Terminal — portfolio@dev:~</span
+              >Terminal — portfolio@angedev:~</span
             >
           </div>
           <div class="window-body terminal-body">
@@ -135,12 +130,20 @@
                 alt="👋"
               />
             </p>
+
             <p class="terminal-text" data-i18n="hero.bio">
               Je suis <strong>Ange</strong>, développeuse fullstack passionnée
               par la création d'applications modernes, performantes et utiles.
             </p>
+            <p class="terminal-text" data-i18n="about.p2">
+              Je conçois des applications performantes, intuitives et scalables.
+              J'aime apprendre, résoudre des problèmes et donner vie aux idées à
+              travers le code.
+            </p>
+
             <p class="prompt-line">
-              portfolio@dev:~$ <span id="typedCursor" class="cursor">_</span>
+              portfolio@angedev:~$
+              <span id="typedCursor" class="cursor">_</span>
             </p>
           </div>
         </div>
@@ -204,244 +207,9 @@
         <span class="sparkle sparkle-2">✧</span>
       </section>
 
-      <!-- ===== A PROPOS ===== -->
-      <section id="apropos" class="section-wrap reveal">
-        <div class="window about-window">
-          <div class="window-header">
-            <span class="window-icon"
-              ><img
-                src="assets/images/puzzle.png"
-                width="22"
-                height="25"
-                alt="🧩"
-            /></span>
-            <span class="window-title" data-i18n="about.windowTitle"
-              >À propos de moi</span
-            >
-            <div class="window-controls">
-              <span>—</span><span>▢</span><span>✕</span>
-            </div>
-          </div>
-          <div class="window-body about-body">
-            <div class="about-photo">
-              <img
-                src="assets/images/profile.jpeg"
-                alt="Photo d'Ange"
-                data-i18n-alt="about.photoAlt"
-                onerror="this.style.display = 'none'"
-              />
-              <span class="status-dot"></span>
-              <span class="status-text" data-i18n="about.statusOnline"
-                >En ligne</span
-              >
-            </div>
-            <div class="about-text">
-              <p class="about-hello" data-i18n="about.hello">
-                Salut !
-                <img
-                  src="assets/images/hand.png"
-                  width="33"
-                  height="35"
-                  alt="👋"
-                />
-              </p>
-              <p data-i18n="about.p1">
-                Je suis <strong>Ange</strong>, développeuse fullstack passionnée
-                par les technologies modernes et la création d'expériences
-                utilisateur fluides.
-              </p>
-              <p data-i18n="about.p2">
-                Je conçois des applications performantes, intuitives et
-                scalables. J'aime apprendre, résoudre des problèmes et donner
-                vie aux idées à travers le code.
-              </p>
-              <div class="tag-list">
-                <span class="tag">Fullstack Dev</span>
-                <span class="tag">React/Node</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">PHP</span>
-                <span class="tag">Flutter/Dart</span>
-                <span class="tag">Web Design</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== GRID : COMPETENCES/CONTACT (gauche) + PROJETS/QUOTE (droite) ===== -->
+      <!-- ===== GRID : PROJETS/CONTACT (gauche) + COMPETENCES/QUOTE (droite, décalée) ===== -->
       <div class="content-grid">
         <div class="col-left">
-          <!-- ===== COMPETENCES ===== -->
-          <section id="competences" class="reveal">
-            <div class="window skills-window">
-              <div class="window-header">
-                <span class="window-icon"
-                  ><img
-                    src="assets/images/folder.png"
-                    width="25"
-                    height="20"
-                    alt="📁"
-                /></span>
-                <span class="window-title" data-i18n="competences.windowTitle"
-                  >Mes compétences</span
-                >
-                <div class="window-controls">
-                  <span>—</span><span>▢</span><span>✕</span>
-                </div>
-              </div>
-              <div class="window-body">
-                <div class="skills-grid">
-                  <div class="skill-icon">
-                    <span>HTML</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>CSS</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>JavaScript</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>PHP</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>React</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>Tailwind</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>Git</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>MySQL</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>Next.js</span>
-                  </div>
-                  <div class="skill-icon">
-                    <span>Node.js</span>
-                  </div>
-                </div>
-                <div class="skill-bars">
-                  <div class="skill-bar-row">
-                    <span class="skill-label" data-i18n="competences.frontend"
-                      >✦ Développement Frontend</span
-                    >
-                    <div class="skill-bar">
-                      <div
-                        class="skill-fill fill-green"
-                        style="width: 90%"
-                      ></div>
-                    </div>
-                    <span class="skill-pct">90%</span>
-                  </div>
-                  <div class="skill-bar-row">
-                    <span class="skill-label" data-i18n="competences.backend"
-                      >✦ Développement Backend</span
-                    >
-                    <div class="skill-bar">
-                      <div
-                        class="skill-fill fill-pink"
-                        style="width: 70%"
-                      ></div>
-                    </div>
-                    <span class="skill-pct">70%</span>
-                  </div>
-                  <div class="skill-bar-row">
-                    <span class="skill-label" data-i18n="competences.database"
-                      >✦ Base de données</span
-                    >
-                    <div class="skill-bar">
-                      <div
-                        class="skill-fill fill-blue"
-                        style="width: 75%"
-                      ></div>
-                    </div>
-                    <span class="skill-pct">75%</span>
-                  </div>
-                  <div class="skill-bar-row">
-                    <span class="skill-label" data-i18n="competences.tools"
-                      >◉ Outils &amp; Versioning (Git)</span
-                    >
-                    <div class="skill-bar">
-                      <div
-                        class="skill-fill fill-yellow"
-                        style="width: 80%"
-                      ></div>
-                    </div>
-                    <span class="skill-pct">80%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- ===== CONTACT ===== -->
-          <section id="contact" class="reveal">
-            <div class="window contact-window">
-              <div class="window-header">
-                <span class="window-icon"
-                  ><img
-                    src="assets/images/letter.png"
-                    width="33"
-                    height="22"
-                    alt="✉️"
-                /></span>
-                <span class="window-title" data-i18n="contact.windowTitle"
-                  >Contact</span
-                >
-                <div class="window-controls">
-                  <span>—</span><span>▢</span><span>✕</span>
-                </div>
-              </div>
-              <div class="window-body">
-                <h3 class="contact-heading" data-i18n="contact.heading">
-                  Discutons de votre projet !
-                </h3>
-                <p class="contact-sub" data-i18n="contact.sub">
-                  Je suis disponible pour des collaborations, des stages ou des
-                  missions freelance.
-                </p>
-                <ul class="contact-list">
-                  <li>
-                    📧
-                    <a href="mailto:prisvi2017@gmail.com"
-                      >prisvi2017@gmail.com</a
-                    >
-                  </li>
-                  <li data-i18n="contact.location">
-                    📍 Abidjan, Côte d'Ivoire
-                  </li>
-                  <li data-i18n="contact.availability">
-                    💬 Disponible pour de nouveaux défis
-                  </li>
-                </ul>
-                <a
-                  href="mailto:prisvi2017@gmail.com"
-                  class="btn btn-pink"
-                  data-i18n="contact.sendBtn"
-                  >Envoyer un message →</a
-                >
-                <div class="socials">
-                  <a
-                    href="https://www.facebook.com/ange.kouame.421559/?locale=fr_FR"
-                    target="_blank"
-                    rel="noopener"
-                    >Facebook</a
-                  >
-                  <a
-                    href="https://www.linkedin.com/in/priscille-kouame-b6b018211/"
-                    target="_blank"
-                    rel="noopener"
-                    >LinkedIn</a
-                  >
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <div class="col-right">
           <!-- ===== PROJETS ===== -->
           <section id="projets" class="reveal">
             <div class="window projects-window">
@@ -594,6 +362,177 @@
             </div>
           </section>
 
+          <!-- ===== CONTACT ===== -->
+          <section id="contact" class="reveal">
+            <div class="window contact-window">
+              <div class="window-header">
+                <span class="window-icon"
+                  ><img
+                    src="assets/images/letter.png"
+                    width="33"
+                    height="22"
+                    alt="✉️"
+                /></span>
+                <span class="window-title" data-i18n="contact.windowTitle"
+                  >Contact</span
+                >
+                <div class="window-controls">
+                  <span>—</span><span>▢</span><span>✕</span>
+                </div>
+              </div>
+              <div class="window-body">
+                <h3 class="contact-heading" data-i18n="contact.heading">
+                  Discutons de votre projet !
+                </h3>
+                <p class="contact-sub" data-i18n="contact.sub">
+                  Je suis disponible pour des collaborations, des stages ou des
+                  missions freelance.
+                </p>
+                <ul class="contact-list">
+                  <li>
+                    📧
+                    <a href="mailto:prisvi2017@gmail.com"
+                      >prisvi2017@gmail.com</a
+                    >
+                  </li>
+                  <li data-i18n="contact.location">
+                    📍 Abidjan, Côte d'Ivoire
+                  </li>
+                  <li data-i18n="contact.availability">
+                    💬 Disponible pour de nouveaux défis
+                  </li>
+                </ul>
+                <a
+                  href="mailto:prisvi2017@gmail.com"
+                  class="btn btn-pink"
+                  data-i18n="contact.sendBtn"
+                  >Envoyer un message →</a
+                >
+                <div class="socials">
+                  <a
+                    href="https://www.facebook.com/ange.kouame.421559/?locale=fr_FR"
+                    target="_blank"
+                    rel="noopener"
+                    >Facebook</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/priscille-kouame-b6b018211/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-right">
+          <!-- ===== COMPETENCES (décalée vers le bas) ===== -->
+          <section id="competences" class="reveal">
+            <div class="window skills-window">
+              <div class="window-header">
+                <span class="window-icon"
+                  ><img
+                    src="assets/images/folder.png"
+                    width="25"
+                    height="20"
+                    alt="📁"
+                /></span>
+                <span class="window-title" data-i18n="competences.windowTitle"
+                  >Mes compétences</span
+                >
+                <div class="window-controls">
+                  <span>—</span><span>▢</span><span>✕</span>
+                </div>
+              </div>
+              <div class="window-body">
+                <div class="skills-grid">
+                  <div class="skill-icon">
+                    <span>HTML</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>CSS</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>PHP</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>React</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>Tailwind</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>Git</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>MySQL</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>Next.js</span>
+                  </div>
+                  <div class="skill-icon">
+                    <span>Node.js</span>
+                  </div>
+                </div>
+                <div class="skill-bars">
+                  <div class="skill-bar-row">
+                    <span class="skill-label" data-i18n="competences.frontend"
+                      >✦ Développement Frontend</span
+                    >
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-green"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">90%</span>
+                  </div>
+                  <div class="skill-bar-row">
+                    <span class="skill-label" data-i18n="competences.backend"
+                      >✦ Développement Backend</span
+                    >
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-pink"
+                        style="width: 70%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">70%</span>
+                  </div>
+                  <div class="skill-bar-row">
+                    <span class="skill-label" data-i18n="competences.database"
+                      >✦ Base de données</span
+                    >
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-blue"
+                        style="width: 75%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">75%</span>
+                  </div>
+                  <div class="skill-bar-row">
+                    <span class="skill-label" data-i18n="competences.tools"
+                      >◉ Outils &amp; Versioning (Git)</span
+                    >
+                    <div class="skill-bar">
+                      <div
+                        class="skill-fill fill-yellow"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                    <span class="skill-pct">80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <!-- ===== QUOTE TERMINAL ===== -->
           <div class="window terminal-window quote-window reveal">
             <div class="window-header terminal-header">
@@ -630,7 +569,7 @@
     </main>
 
     <footer class="footer">
-      <p data-i18n="footer.text">Portfolio de Ange Kouame</p>
+      <p data-i18n="footer.text">Portfolio de Ange Kouame💻</p>
     </footer>
 
     <script src="js/i18n.js"></script>
